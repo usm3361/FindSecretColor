@@ -7,18 +7,14 @@ const Cell = ({ rand, index, setCount, gameOver, setGameOver }) => {
   const isWon = rand === index;
 
   if (pressed)
-    return (
-      <div className={isWon ? "won" : "failed"} id={index}>
-        {!isWon ? "X" : "V"}
-      </div>
-    );
+    return <div className={isWon ? "won" : "failed"} id={index}></div>;
   function handleClick() {
     if (!gameOver) {
       if (isWon) {
         setGameOver(true);
         createConfetti();
-        
       }
+
       setPressed(true);
       setCount((prev) => prev + 1);
     }

@@ -11,7 +11,7 @@ const GridLayout = ({ setCount }) => {
     .map((_, i) => (
       <Cell
         key={i}
-        index={i}
+        index={i+1}
         rand={rand}
         setCount={setCount}
         gameOver={gameOver}

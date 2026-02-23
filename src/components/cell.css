@@ -16,11 +16,11 @@
   box-shadow: inset 3px 3px 4px black;
 }
 .failed {
-  background-color: #a06363;
+  background-color: #db3434;
 }
 .won {
-  border: inset coral 4px;
-  color: white;
+    background-color: #21d892;
+    color: white;
 }
 
 .confetti {
