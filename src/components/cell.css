@@ -1,0 +1,40 @@
+.cell,
+.won,
+.failed {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: goldenrod;
+  border-radius: 10px;
+  font-size: 50px;
+  color: red;
+  cursor: pointer;
+}
+.cell:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 3px 3px 4px black;
+}
+.failed {
+  background-color: #a06363;
+}
+.won {
+  border: inset coral 4px;
+  color: white;
+}
+
+.confetti {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotateZ(360deg);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(15, 70, 107);
+  padding: 2rem;
+}
+h1{
+  color: white;
+}
+span{
+  color: rgb(224, 59, 59);
+}
+strong{
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+p{
+  color: yellow;
+}
