@@ -1,11 +1,10 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import "./container.css";
 import { createGrid, GameContext } from "../context/GameContext";
 
 const Container = ({ children }) => {
   const { setGameOver, count, setCount, setGrid, setRand } =
     useContext(GameContext);
-
   return (
     <div className="container">
       <h1>

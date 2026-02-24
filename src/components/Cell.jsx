@@ -4,8 +4,8 @@ import { createConfetti } from "./hooks/confetti";
 import { GameContext } from "../context/GameContext";
 
 const Cell = ({ index }) => {
-  const [pressed, setPressed] = useState(false);
   const {rand, setCount, gameOver, setGameOver} = useContext(GameContext)
+  const [pressed, setPressed] = useState(false);
 
   const isWon = rand === index;
 

@@ -1,6 +1,6 @@
+import { useContext } from "react";
 import "./GridLayout.css";
 import Cell from "./Cell";
-import { useContext } from "react";
 import { GameContext } from "../context/GameContext";
 
 const GridLayout = () => {
