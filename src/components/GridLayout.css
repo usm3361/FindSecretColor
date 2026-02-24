@@ -1,7 +1,7 @@
 .grid-erea {
   display: grid;
-  grid-template-columns: repeat(10, 4rem);
-  grid-template-rows: repeat(10, 4rem);
+  grid-template-columns: repeat(10, 5rem);
+  grid-template-rows: repeat(10, 5rem);
   background-color: rgb(85, 80, 80);
   gap: 0.5rem;
   padding: 1rem;

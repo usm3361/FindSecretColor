@@ -5,7 +5,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: goldenrod;
+  background-color: rgb(190, 159, 80);
   border-radius: 10px;
   font-size: 50px;
   color: red;
@@ -16,11 +16,12 @@
   box-shadow: inset 3px 3px 4px black;
 }
 .failed {
-  background-color: #db3434;
+  background-color: #f73636;
+  cursor: no-drop;
 }
 .won {
-    background-color: #21d892;
-    color: white;
+  background-color: #21d892;
+  color: white;
 }
 
 .confetti {

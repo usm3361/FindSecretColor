@@ -1,24 +1,17 @@
 import "./GridLayout.css";
 import Cell from "./Cell";
-import { useState } from "react";
+import { useContext } from "react";
+import { GameContext } from "../context/GameContext";
 
-const rand = Math.floor(Math.random() * 100);
-console.log(rand);
-const GridLayout = ({ setCount }) => {
-  const [gameOver, setGameOver] = useState(false);
-  const grid = new Array(100)
-    .fill("")
-    .map((_, i) => (
-      <Cell
-        key={i}
-        index={i+1}
-        rand={rand}
-        setCount={setCount}
-        gameOver={gameOver}
-        setGameOver={setGameOver}
-      />
-    ));
-  return <div className="grid-erea">{grid.map((e) => e)}</div>;
+const GridLayout = () => {
+  const { grid } = useContext(GameContext);
+  return (
+    <div className="grid-erea">
+      {grid.map((id, i) => (
+        <Cell key={id} index={i + 1} />
+      ))}
+    </div>
+  );
 };
 
 export default GridLayout;

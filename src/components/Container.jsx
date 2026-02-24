@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./container.css";
-const Container = ({ children ,count}) => {
-    
+import { createGrid, GameContext } from "../context/GameContext";
+
+const Container = ({ children }) => {
+  const { setGameOver, count, setCount, setGrid, setRand } =
+    useContext(GameContext);
 
   return (
     <div className="container">
@@ -11,6 +14,17 @@ const Container = ({ children ,count}) => {
       {children}
       <strong>Clicks: {count}</strong>
       <p>Keep Searching!</p>
+      <button
+        onClick={() => {
+          setCount(0);
+          setGrid(createGrid);
+          setGameOver(false);
+
+          setRand(Math.floor(Math.random() * 100));
+        }}
+      >
+        New Game
+      </button>
     </div>
   );
 };
